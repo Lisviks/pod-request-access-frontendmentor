@@ -136,3 +136,113 @@ main form .btn {
   padding: 9px 0;
   width: 100%;
 }
+
+@media (min-width: 768px) {
+  body {
+    font-family: 'Chivo', sans-serif;
+    background-image: url('./assets/tablet/image-host.jpg');
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: auto;
+    background-color: #121725;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  .bg-color {
+    display: none;
+  }
+
+  .container {
+    max-width: 850px;
+    text-align: left;
+    margin: 0;
+    padding-top: 0;
+  }
+
+  header {
+    margin-top: 50px;
+    margin-left: 39px;
+  }
+
+  header .logo {
+    margin: 0;
+  }
+
+  main {
+    margin-top: 152px;
+    position: relative;
+  }
+
+  main .container {
+    padding-top: 93px;
+    padding-bottom: 93px;
+    margin-left: 39px;
+    width: 635px;
+    background-color: #121725;
+  }
+
+  main h1 {
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 56px;
+    margin-top: 0;
+  }
+
+  main p {
+    margin-top: 31px;
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  main .podcasts {
+    margin-top: 33px;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0;
+    width: 536px;
+  }
+
+  main .podcasts .pod.spotify {
+    width: 96px;
+  }
+
+  main .podcasts .pod.apple {
+    width: 78px;
+  }
+
+  main .podcasts .pod.google {
+    width: 125px;
+  }
+
+  main .podcasts .pod.pocket {
+    width: 129px;
+  }
+
+  main form {
+    margin-top: 40px;
+    position: relative;
+    width: 427px;
+  }
+
+  main form .input-field {
+    position: relative;
+  }
+
+  main form .email-input {
+    padding: 14px 32px;
+    width: 100%;
+  }
+
+  main form .btn {
+    margin: 0;
+    width: 162px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 5px;
+  }
+}
