@@ -29,6 +29,10 @@ img {
   z-index: -1;
 }
 
+.bg-dots {
+  display: none;
+}
+
 .container {
   max-width: 450px;
   /* width: 375px; */
@@ -139,7 +143,6 @@ main form .btn {
 
 @media (min-width: 768px) {
   body {
-    font-family: 'Chivo', sans-serif;
     background-image: url('./assets/tablet/image-host.jpg');
     background-repeat: no-repeat;
     background-position: top right;
@@ -147,12 +150,15 @@ main form .btn {
     background-color: #121725;
   }
 
-  img {
-    width: 100%;
-  }
-
   .bg-color {
     display: none;
+  }
+
+  .bg-dots {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 30px;
   }
 
   .container {
@@ -244,5 +250,52 @@ main form .btn {
     top: 50%;
     transform: translateY(-50%);
     right: 5px;
+  }
+}
+
+@media (min-width: 1440px) {
+  body {
+    background-image: url('./assets/desktop/image-host.jpg');
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: auto;
+  }
+
+  .bg-dots {
+    display: block;
+    position: absolute;
+    bottom: unset;
+    left: unset;
+    right: 0;
+    top: 718px;
+  }
+
+  .container {
+    width: 723px;
+  }
+
+  header {
+    margin-top: 102px;
+    margin-left: 165px;
+  }
+
+  main {
+    margin-top: 103px;
+  }
+
+  main .container {
+    padding-top: 88px;
+    margin-left: 165px;
+    width: 723px;
+  }
+
+  main h1 {
+    font-size: 52px;
+    line-height: 62px;
+  }
+
+  main p {
+    margin-top: 24px;
+    width: 445px;
   }
 }
